@@ -161,4 +161,93 @@ David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twit
 
 Second part of Airbnb: Joann Vuong
 ## License
+
+AirBnB Clone V4
+Project Overview
+This project is part of the SE Foundations curriculum and focuses on developing dynamic web applications using Python, JavaScript, and JQuery. The goal is to enhance the existing AirBnB clone project by adding new dynamic features.
+
+Team Members
+Endurance Ossai
+Nada Elmasry
+Project Timeline
+Start Date: May 30, 2024, 6:00 AM
+End Date: June 3, 2024, 6:00 AM
+Checker Release Date: May 31, 2024, 6:00 AM
+Learning Objectives
+By the end of this project, you will be able to:
+
+Request your own API and understand its importance.
+Modify HTML element styles and content.
+Manipulate the DOM using JavaScript and JQuery.
+Make GET and POST requests using JQuery Ajax.
+Bind and listen to DOM and user events.
+Resources
+Selector
+Get and set content
+Manipulate CSS classes
+Manipulate DOM elements
+Document ready
+Introduction to GET & POST request
+HTTP access control (CORS)
+Requirements
+Editors: vi, vim, emacs
+Browser Compatibility: Chrome (version 57.0)
+Code Standards: Semistandard compliant with the flag --global $: semistandard *.js --global $
+JQuery Version: 3.x
+JavaScript Folder: All your JavaScript files must be in the scripts folder
+HTML Reloading: HTML should not reload for each action
+Initial Setup
+Install Dependencies
+Before starting the project, ensure you have the necessary dependencies installed:
+
+sh
+Copy code
+$ sudo apt-get install -y python3-lxml
+$ sudo pip3 install flask_cors flasgger
+Expose Ports in Vagrant
+In your Vagrantfile, add the following line to expose the port 5001:
+
+ruby
+Copy code
+config.vm.network :forwarded_port, guest: 5001, host: 5001
+API Setup
+To use the AirBnB API with the port 5001:
+
+sh
+Copy code
+HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db HBNB_API_PORT=5001 python3 -m api.v1.app
+Tasks
+0. Last Clone!
+Description: Fork the existing codebase and create a new repository called AirBnB_clone_v4. Update the README.md with new information and add yourself as an author.
+Files: README.md
+1. Cash Only
+Description: Start a Flask web application, rename files and update routes.
+Files: 0-hbnb.py, templates/0-hbnb.html
+2. Select Some Amenities to be Comfortable!
+Description: Make the filters section dynamic with checkboxes for amenities.
+Files: 1-hbnb.py, templates/1-hbnb.html, static/scripts/1-hbnb.js
+3. API Status
+Description: Check the API status and update the header accordingly.
+Files: api/v1/app.py, 2-hbnb.py, templates/2-hbnb.html, static/styles/3-header.css, static/scripts/2-hbnb.js
+4. Fetch Places
+Description: Fetch and display places dynamically using AJAX.
+Files: 3-hbnb.py, templates/3-hbnb.html, static/scripts/3-hbnb.js
+5. Filter Places by Amenity
+Description: Filter places based on selected amenities.
+Files: 4-hbnb.py, templates/4-hbnb.html, static/scripts/4-hbnb.js
+Advanced Tasks
+6. States and Cities
+Description: Add filters for states and cities.
+Files: 100-hbnb.py, templates/100-hbnb.html, static/scripts/100-hbnb.js
+7. Reviews
+Description: Implement a feature to show and hide reviews.
+Files: 101-hbnb.py, templates/101-hbnb.html, static/scripts/101-hbnb.js
+Manual QA Review
+Ensure to request a review from a peer before the project deadline. If no peers are available, request a review from a TA or staff member.
+
+Authors
+Endurance Ossai
+Nada Elmasry
+License
+This project is licensed under the terms and conditions specified by ALX. Any form of plagiarism is strictly forbidden and will result in removal from the program.
 Public Domain. No copy write protection. 
